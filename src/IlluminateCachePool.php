@@ -46,7 +46,12 @@ class IlluminateCachePool extends AbstractCachePool implements HierarchicalPoolI
     {
         $ttl = null === $ttl ? 0 : $ttl / 60;
 
-        $data = serialize([true, $item->get(), $item->getTags(), $item->getExpirationTimestamp()]);
+        $data = serialize([
+            true,
+            $item->get(),
+            $item->getTags(),
+            $item->getExpirationTimestamp(),
+        ]);
 
         $this->store->put($this->getHierarchyKey($item->getKey()), $data, $ttl);
 

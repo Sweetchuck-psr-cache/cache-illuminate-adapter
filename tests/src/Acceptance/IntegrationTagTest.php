@@ -12,10 +12,14 @@ declare(strict_types = 1);
  * with this source code in the file LICENSE.
  */
 
-namespace Cache\Adapter\Illuminate\Tests;
+namespace Cache\Adapter\Illuminate\Tests\Acceptance;
 
+use Cache\Adapter\Illuminate\Tests\Helper\CreatePoolTrait;
 use Cache\IntegrationTests\TaggableCachePoolTest;
 
+/**
+ * @covers \Cache\Adapter\Illuminate\IlluminateCachePool
+ */
 class IntegrationTagTest extends TaggableCachePoolTest
 {
     use CreatePoolTrait;

@@ -12,7 +12,7 @@ declare(strict_types = 1);
  * with this source code in the file LICENSE.
  */
 
-namespace Cache\Adapter\Illuminate\Tests;
+namespace Cache\Adapter\Illuminate\Tests\Helper;
 
 use Cache\Adapter\Illuminate\IlluminateCachePool;
 use Illuminate\Cache\ArrayStore;

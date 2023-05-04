@@ -12,7 +12,7 @@ declare(strict_types = 1);
  * with this source code in the file LICENSE.
  */
 
-namespace Cache\Adapter\Illuminate\Tests;
+namespace Cache\Adapter\Illuminate\Tests\Acceptance;
 
 use Cache\Adapter\Common\CacheItem;
 use Cache\Adapter\Illuminate\IlluminateCachePool;
@@ -20,6 +20,9 @@ use Illuminate\Contracts\Cache\Store;
 use PHPUnit\Framework\TestCase;
 use Psr\Cache\CacheItemPoolInterface;
 
+/**
+ * @covers \Cache\Adapter\Illuminate\IlluminateCachePool
+ */
 class IlluminateAdapterTest extends TestCase
 {
     private IlluminateCachePool $pool;
